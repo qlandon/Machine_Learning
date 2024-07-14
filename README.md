@@ -2,7 +2,7 @@
 
 This project focuses on predicting the performance and maintenance needs of turbofan engines using linear regression models. The aim is to analyze engine data and develop a model to predict future engine behavior and potential failures.
 
-This readme concern the project done in `Projet_soutenance`.
+This readme concern the project done in `Projet_soutenance` in `Projet_soutenance/Project_turboFan.ipynb` .
 
 ## Table of Contents
 
@@ -108,6 +108,28 @@ Mean Squared Error: 0.191072
 Mean Absolute Error: 0.348887 
 Coefficient of Determination (R^2): 0.3762750926692907
 ```
+
+## Skills Demonstrated
+
+- **Python**: Utilized for data manipulation, model building, and evaluation.
+- **Data Preprocessing**:
+  - Handling missing values
+  - Outlier detection and treatment
+  - Data normalization
+- **Feature Engineering**:
+  - Creating new features from existing data to improve model performance
+  - Selecting relevant features based on correlation and domain knowledge
+- **Data Visualization**:
+  - Box plots for outlier detection
+  - Correlation matrices to understand feature relationships
+  - Plotting prediction results
+- **Machine Learning**:
+  - Linear Regression model training and evaluation
+  - Model performance metrics (MSE, MAE, R^2)
+- **Scikit-Learn**: Employed for data preprocessing, model building, and evaluation.
+- **Pandas**: Used for data manipulation and analysis.
+- **Matplotlib and Seaborn**: Used for data visualization and plotting.
+- **Jupyter Notebook**: Interactive environment for developing and running the project code.
 
 
 ## Contributing
