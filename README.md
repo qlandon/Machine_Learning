@@ -54,11 +54,30 @@ To use the project, follow these steps:
 
 ## Process Overview
 
-### Outlier Treatment
-Outliers can significantly affect the performance of a regression model. In this project, we identify and handle outliers using statistical methods such as the z-score and IQR (Interquartile Range) to ensure the data is clean and reliable.
+## Outlier Treatment
+
+Outliers can significantly affect the performance of a regression model. To identify and handle outliers in our dataset, we use box plots (also known as box-and-whisker plots). Box plots provide a graphical representation of the data distribution and highlight the outliers.
+
+### Steps for Outlier Treatment:
+
+1. **Visualize Outliers Using Box Plots:**
+   - For each feature in the dataset, create a box plot to visualize the distribution of the data and identify potential outliers.
+   - The box plot displays the median, quartiles, and potential outliers (points outside 1.5 times the interquartile range).
+
+!(box_values)[doc/box_values.png]
+   
+2. **Identify and Handle Outliers:**
+
+    Calculate the interquartile range (IQR) for each feature.
+    Define the lower bound as Q1 - 1.5 * IQR and the upper bound as Q3 + 1.5 * IQR.
+    Any data points outside these bounds are considered outliers and can be treated accordingly (e.g., removed or capped).
+
+By visualizing and treating outliers, we ensure that the data used for model training is clean and reliable, leading to better model performance and accuracy.
 
 ### Correlation Matrix
 A correlation matrix is used to understand the relationships between different features in the dataset. This helps in selecting the most relevant features for the model and eliminating redundant or highly correlated features, which can cause multicollinearity.
+
+!(matrice)[doc/matrice_correlation.png]
 
 ### Data Normalization
 Data normalization is crucial for ensuring that all features contribute equally to the model. We use the StandardScaler from scikit-learn to normalize the data, transforming it to have a mean of 0 and a standard deviation of 1.
