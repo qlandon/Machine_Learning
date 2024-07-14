@@ -88,14 +88,27 @@ We use a linear regression model for its simplicity and interpretability. The mo
 ### Cost Function
 The cost function used in this project is the Mean Squared Error (MSE), which measures the average squared difference between the actual and predicted values. This helps in optimizing the model by minimizing the error.
 
+**Training of the model :**
+
+![training_model](doc/training_model.png)
+
 ## Results
 
 The model's performance is evaluated using the following metrics:
+
+![result_model](doc/result_model.png)
 
 -  Mean Squared Error (MSE)
 - Mean Absolute Error (MAE)
 - Coefficient of Determination (R^2)
 The results are visualized using a plot comparing the actual values and the predicted values.
+
+```text
+Mean Squared Error: 0.191072
+Mean Absolute Error: 0.348887 
+Coefficient of Determination (R^2): 0.3762750926692907
+```
+
 
 ## Contributing
 
